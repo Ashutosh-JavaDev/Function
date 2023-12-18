@@ -5,7 +5,7 @@ import java.util.*;
 public class MinimmumBetweenThree {
     public void minimum() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the Number");
+        System.out.println("Enter Three Number");
         int num1 = sc.nextInt();
         int num2 = sc.nextInt();
         int num3 = sc.nextInt();
