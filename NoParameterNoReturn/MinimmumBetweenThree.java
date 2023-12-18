@@ -21,6 +21,7 @@ public class MinimmumBetweenThree {
 
     }
     public static void main(String[] args) {
-        
+        MinimmumBetweenThree ob=new MinimmumBetweenThree();
+        ob.minimum();
     }
 }
