@@ -19,4 +19,8 @@ public class PerfectOrNot {
             System.out.println("Number is not Perfect");
         }
     }
+    public static void main(String[] args) {
+        PerfectOrNot sanatan=new PerfectOrNot();
+        sanatan.check();
+    }
 }
