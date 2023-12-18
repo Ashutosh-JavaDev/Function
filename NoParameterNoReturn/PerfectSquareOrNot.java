@@ -11,7 +11,7 @@ public class PerfectSquareOrNot {
                 c++;
             }
         }
-        if(c>0){
+        if((c>0) ||(number==4)){
             System.out.println("Number is Perfect Square");
 
         }
