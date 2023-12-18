@@ -20,6 +20,7 @@ public class PerfectSquareOrNot {
         }
     }
     public static void main(String[] args) {
-        
+        PerfectSquareOrNot sanatan=new PerfectSquareOrNot();
+        sanatan.Check();
     }
 }
