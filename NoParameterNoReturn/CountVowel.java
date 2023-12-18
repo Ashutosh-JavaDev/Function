@@ -21,5 +21,8 @@ public class CountVowel {
             System.out.println("No Vowel");
         }
     }
-    
+    public static void main(String[] args) {
+        CountVowel ob=new CountVowel();
+        ob.vowel();
+    }
 }
