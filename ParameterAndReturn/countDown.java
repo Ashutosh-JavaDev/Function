@@ -2,10 +2,10 @@ package Function.ParameterAndReturn;
 class CountDown{
     void countData(int term){
         if(term<0){
-            System.out.print(term+" ");
+            return;
         }
         else{
-            System.out.print(term);
+            System.out.print(term+" ");
             countData(term-1);
         }
     }
