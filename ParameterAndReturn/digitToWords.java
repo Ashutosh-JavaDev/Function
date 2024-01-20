@@ -25,5 +25,8 @@ class WtoD{
     }
 }
 public class digitToWords {
-    
+    public static void main(String[] args) {
+        WtoD ob=new WtoD();
+        ob.digitToword(321);
+    }
 }
