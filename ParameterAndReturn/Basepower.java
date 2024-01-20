@@ -10,5 +10,9 @@ class PowerBase{
     }
 }
 public class Basepower {
-    
+ public static void main(String[] args) {
+    PowerBase ob=new PowerBase();
+    float result=ob.basePower(5, 5);
+    System.out.println("Result: "+result);
+ }   
 }
