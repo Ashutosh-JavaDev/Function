@@ -2,10 +2,10 @@ package Function.ParameterAndReturn;
 class Digitsum{
     int sumDig(int number){
         if(number<1){
-            return 1;
+            return 0;
         }
         else{
-            return (number%10)+(number/10);
+            return (number%10)+sumDig(number/10);
         }
     }
 }
