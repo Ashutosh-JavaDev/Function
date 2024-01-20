@@ -11,5 +11,8 @@ class CountDown{
     }
 }
 public class countDown {
-    
+    public static void main(String[] args) {
+        CountDown ob=new CountDown();
+        ob.countData(5);
+    }
 }
