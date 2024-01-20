@@ -22,5 +22,9 @@ class bubSorting{
     }
 }
 public class bubbleSort {
-    
+    public static void main(String[] args) {
+        bubSorting ob=new bubSorting();
+        int arr[]={2,4,1,5,3};
+        ob.sortingBubble(arr, 0, 0+1, arr.length-1);
+    }
 }
