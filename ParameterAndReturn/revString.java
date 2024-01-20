@@ -12,5 +12,9 @@ class revstrinG{
     }
 }
 public class revString {
-    
+    public static void main(String[] args) {
+        revstrinG ob=new revstrinG();
+        String str="Ashutosh";
+        ob.stringReverse(str, str.length()-1);
+    }
 }
