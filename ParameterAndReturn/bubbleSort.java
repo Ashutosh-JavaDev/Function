@@ -1,36 +1,32 @@
 package Function.ParameterAndReturn;
 
-class bubSorting {
+class BubSorting {
     void sortingBubble(int arr[], int i, int j, int size) {
-        if (size == 1) {
+        if (size == 1 || i >= size-1) {
             return;
-        } else if (i < size && j < size) {
-            if (arr[i] > arr[j]) {
-                int temp = arr[i];
-                arr[i] = arr[i + 1];
-                arr[i + 1] = temp;
-                sortingBubble(arr, i, j + 1, size - 1);
-                i++;
-                System.out.print(arr[i] + " ");
-
-            } else {
-                int temp = arr[i + 1];
-                arr[i + 1] = arr[i];
-                arr[i] = temp;
-                sortingBubble(arr, i, j + 1, size - 1);
-                i++;
-                System.out.print(arr[i] + " ");
-
+        } else if (j < size-1-i) {
+            if (arr[j] > arr[j+1]) {
+                int temp = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
             }
+            sortingBubble(arr, i, j + 1, size);
+        } else {
+            sortingBubble(arr, i+1, 0, size);
         }
     }
 }
 
 public class bubbleSort {
     public static void main(String[] args) {
-        bubSorting ob = new bubSorting();
+        BubSorting ob = new BubSorting();
         int arr[] = { 2, 4, 1, 5, 3 };
-        int i=0;
-        ob.sortingBubble(arr, i, i+1, arr.length - 1);
+        int i = 0;
+        ob.sortingBubble(arr, i, i + 1, arr.length);
+        
+        // Print the sorted array
+        for (int element : arr) {
+            System.out.print(element + " ");
+        }
     }
 }
