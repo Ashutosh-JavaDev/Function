@@ -8,5 +8,8 @@ class facto{
     }
 }
 public class factorial {
-    
+    public static void main(String[] args) {
+        facto ob=new facto();
+        ob.fact(5);
+    }
 }
