@@ -7,7 +7,7 @@ class revstrinG{
         }
         else{
             System.out.print(str.charAt(str.length()-1));
-            stringReverse(str,str.length()-1);
+            stringReverse(str.substring(0, len),len-1);
         }
     }
 }
