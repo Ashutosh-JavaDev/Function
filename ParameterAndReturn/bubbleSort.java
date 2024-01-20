@@ -20,9 +20,9 @@ class BubSorting {
 public class bubbleSort {
     public static void main(String[] args) {
         BubSorting ob = new BubSorting();
-        int arr[] = { 2, 4, 1, 5, 3 };
+        int arr[] = { 0,2, 4, 5, 1, 3 };
         int i = 0;
-        ob.sortingBubble(arr, i, i + 1, arr.length);
+        ob.sortingBubble(arr, i, 0, arr.length);
         
         // Print the sorted array
         for (int element : arr) {
