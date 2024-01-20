@@ -10,6 +10,7 @@ class facto{
 public class factorial {
     public static void main(String[] args) {
         facto ob=new facto();
-        ob.fact(5);
+       int result= ob.fact(5);
+        System.out.println("Result: "+result);
     }
 }
