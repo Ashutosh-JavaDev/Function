@@ -1,7 +1,12 @@
 package Function.ParameterAndReturn;
 class PowerBase{
-    void basePower(float base,int power){
-        
+    float basePower(float base,int power){
+        if(power==1){
+            return base;
+        }
+        else{
+            return base*basePower(base, power-1);
+        }
     }
 }
 public class Basepower {
