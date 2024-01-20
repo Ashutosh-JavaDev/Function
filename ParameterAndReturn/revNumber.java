@@ -12,5 +12,8 @@ class numberRev{
     }
 }
 public class revNumber {
-    
+    public static void main(String[] args) {
+        numberRev ob=new numberRev();
+        ob.revNums(12345);
+    }
 }
