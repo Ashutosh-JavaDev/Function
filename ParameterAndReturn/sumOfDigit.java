@@ -10,5 +10,9 @@ class Digitsum{
     }
 }
 public class sumOfDigit {
-    
+    public static void main(String[] args) {
+        Digitsum ob=new  Digitsum();
+        int result=ob.sumDig(12345);
+        System.out.println("Result: "+result);
+    }
 }
