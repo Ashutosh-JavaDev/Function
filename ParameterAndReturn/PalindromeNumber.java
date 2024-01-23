@@ -8,7 +8,8 @@ class Palindrome{
         else{
             int num=number;
             int d=num%10;
-            
+            rev=rev*10+d;
+            return disp(number/10,rev);
         }
     }
 }
