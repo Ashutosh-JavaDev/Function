@@ -1,7 +1,7 @@
 package Function.ParameterAndReturn;
 import java.util.Scanner;
 class Binsearch{
-    int biSearch(int arr[],int size,int target,int s,int e){
+    int biSearch(int arr[],int target,int s,int e){
         if(s>e){
             return -1;
         }
@@ -11,14 +11,18 @@ class Binsearch{
                 return mid;
             }
             else if(arr[mid]<target){
-                return biSearch(arr, size, target, mid+1, e);
+                return biSearch(arr, target, mid+1, e);
             }
             else{
-                return biSearch(arr, size, target, s, mid-1);
+                return biSearch(arr, target, s, mid-1);
             }
         }
     }
 }
 public class BinarySearch {
-    
+  public static void main(String[] args) {
+    Binsearch ob=new Binsearch();
+    int arr[]={22,23,35,56,78};
+    ob.biSearch(arr, 35, 0, arr.length-1);
+  }   
 }
