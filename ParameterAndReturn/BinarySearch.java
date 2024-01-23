@@ -24,7 +24,7 @@ public class BinarySearch {
     Binsearch ob=new Binsearch();
     int arr[]={22,23,35,56,78};
     int result=ob.biSearch(arr, 35, 0, arr.length-1);
-    
+    System.out.println("Result: "+result);
 
   }   
 }
