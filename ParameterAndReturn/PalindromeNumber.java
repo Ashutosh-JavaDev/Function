@@ -9,7 +9,13 @@ class Palindrome{
             int num=number;
             int d=num%10;
             rev=rev*10+d;
-            return disp(number/10,rev);
+            disp(number/10,rev);
+            if(number==rev){
+                System.out.print(number+" ");
+            }
+            else{
+                disp(number/10, rev);
+            }
         }
     }
 }
