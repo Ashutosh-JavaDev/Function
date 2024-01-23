@@ -18,6 +18,7 @@ public class target {
     public static void main(String[] args) {
         TargetNumber ob=new TargetNumber();
         int arr[]={2,4,12,42,45};
-        ob.disp(arr, arr.length-1, 4);
+        int result=ob.disp(arr, arr.length-1, 4);
+        System.out.println("Result: "+result);
     }
 }
