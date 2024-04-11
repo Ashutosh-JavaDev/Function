@@ -33,8 +33,6 @@ class merge {
         for (int l = 0, m = first; l < k.length; l++, m++) {
             arr[m] = k[l];
         }
-        System.out.println("Sorted Array");
-        System.out.print(k + " ");
     }
 
     public static void recur(int arr[], int s, int l) {
