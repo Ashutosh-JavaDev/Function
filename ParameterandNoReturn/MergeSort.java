@@ -5,8 +5,7 @@ import java.util.Scanner;
 class merge {
     public static void mergeSort(int arr[], int first, int last) {
         int mid = first + (last - first) / 2;
-        int k[] = new int[first + last];
-        int total = first + last;
+        int k[] = new int[last - first + 1];
         int s = 0;
         int i = first;
         int j = mid + 1;
@@ -31,8 +30,8 @@ class merge {
             s++;
             j++;
         }
-        for (int l = 0, m = 0; l <= total; l++, m++) {
-            k[l] = arr[m];
+        for (int l = 0, m = first; l < k.length; l++, m++) {
+            arr[m] = k[l];
         }
         System.out.println("Sorted Array");
         System.out.print(k + " ");
