@@ -25,6 +25,11 @@ class merge {
             i++;
             s++;
         }
+        while (j <= last) {
+            k[s] = arr[j];
+            s++;
+            j++;
+        }
     }
 }
 
