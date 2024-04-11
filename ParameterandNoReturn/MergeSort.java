@@ -39,7 +39,7 @@ class merge {
     }
 
     public static void recur(int arr[], int s, int l) {
-        if (s <= l) {
+        if (s < l) {
             int mid = s + (l - s) / 2;
             recur(arr, s, mid);
             recur(arr, mid + 1, l);
@@ -49,16 +49,14 @@ class merge {
 }
 
 public class MergeSort {
-public static void main(String[] args) {
-    Scanner sc=new Scanner(System.in);
-    merge ob=new merge();
-    System.out.println("Enter the size of the array");
-    int size=sc.nextInt();
-    int arr[]=new int [size];
-    System.out.println("Enter the Value in the Array");
-    for(int i=0;i<size;i++){
-        arr[i]=sc.nextInt();
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        merge ob = new merge();
+        int arr[] = { 7, 3, 2, 5, 9, 10 };
+        ob.recur(arr, 0, arr.length - 1);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
-    ob.recur(arr, 0, size-1);
-}
 }
